@@ -23,6 +23,8 @@ Sidebar
 .img-headshot {
 	border-radius: 50%;
 	border: 6px double rgba(235, 173, 2, 0.486);
+	height: 40%;
+	min-height: 200px;
 	max-height: 600px;
 	margin-bottom: 1rem;
 }
