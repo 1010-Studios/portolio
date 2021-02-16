@@ -1,0 +1,60 @@
+/**********************
+Sidebar
+**********************/
+.container-home {
+	display: flex;
+}
+
+.sidebar {
+	background-image: linear-gradient(
+		to right,
+		rgba(58, 55, 55, 0.7),
+		rgba(26, 15, 15, 0.2)
+	);
+	border-radius: 15px;
+	padding: 2rem;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.img-headshot {
+	border-radius: 50%;
+	border: 6px double orange;
+	max-height: 600px;
+	margin-bottom: 1rem;
+}
+
+.sidebar--deets {
+	background: rgba(26, 15, 15, 0.2);
+	border-radius: 15px;
+	width: 100%;
+	color: orange;
+}
+
+.skills {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	padding: 0;
+}
+
+.skills li {
+	padding: 0.4rem;
+	/* text-align: left; */
+}
+
+/**********************
+Main
+**********************/
+
+.main {
+	flex: 1;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: center;
+}

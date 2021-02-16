@@ -1,38 +1,142 @@
 .App {
-  text-align: center;
+	background-image: radial-gradient(
+			circle 8px at 80% 68%,
+			rgb(35, 35, 35) 0%,
+			rgb(35, 35, 35) 50%,
+			transparent 50%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle 8px at 24% 41%,
+			rgb(35, 35, 35) 0%,
+			rgb(35, 35, 35) 50%,
+			transparent 50%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle 6px at 34% 66%,
+			rgb(45, 45, 45) 0%,
+			rgb(45, 45, 45) 50%,
+			transparent 50%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle 6px at 56% 55%,
+			rgb(45, 45, 45) 0%,
+			rgb(45, 45, 45) 50%,
+			transparent 50%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle 6px at 11% 60%,
+			rgb(45, 45, 45) 0%,
+			rgb(45, 45, 45) 50%,
+			transparent 50%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle 6px at 6% 89%,
+			rgb(45, 45, 45) 0%,
+			rgb(45, 45, 45) 50%,
+			transparent 50%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle 6px at 0% 36%,
+			rgb(45, 45, 45) 0%,
+			rgb(45, 45, 45) 50%,
+			transparent 50%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle 12px at 20% 56%,
+			rgb(35, 35, 35) 0%,
+			rgb(35, 35, 35) 50%,
+			transparent 50%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle 12px at 44% 56%,
+			rgb(35, 35, 35) 0%,
+			rgb(35, 35, 35) 50%,
+			transparent 50%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle 12px at 0% 43%,
+			rgb(35, 35, 35) 0%,
+			rgb(35, 35, 35) 50%,
+			transparent 50%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle 12px at 19% 33%,
+			rgb(35, 35, 35) 0%,
+			rgb(35, 35, 35) 50%,
+			transparent 50%,
+			transparent 100%
+		),
+		radial-gradient(
+			circle at center left,
+			rgb(35, 35, 35) 0%,
+			rgb(35, 35, 35) 10%,
+			transparent 10%,
+			transparent 90%
+		),
+		linear-gradient(135deg, rgb(208, 17, 94), rgb(27, 226, 231));
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/**********************
+Main Content
+**********************/
+.container-main {
+	display: flex;
+	flex-direction: column;
+	max-height: 85vh;
+	overflow: auto;
+	justify-content: space-around;
+	align-items: left;
+	text-align: center;
+	margin: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/**********************
+NavBar
+**********************/
+
+nav {
+	display: flex;
+	justify-content: right;
+	margin-top: 0;
+	background: rgba(58, 55, 55, 0.2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav ul {
+	background: rgba(58, 55, 55, 0.4);
+	width: 50vw;
+	max-width: 500px;
+	border-bottom-left-radius: 15px;
+	display: flex;
+	justify-content: right;
+	list-style: none;
+	padding-right: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li {
+	padding: 0.5rem;
+	margin-left: 0.4rem;
+	cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li a:hover {
+	color: orange;
+	opacity: 0.4;
 }
