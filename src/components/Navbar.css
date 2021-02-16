@@ -1,0 +1,40 @@
+/**********************
+NavBar
+**********************/
+
+nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 0;
+	background: rgba(58, 55, 55, 0.2);
+}
+
+nav ul {
+	position: fixed;
+	margin-top: 0;
+	padding: 0;
+	background: rgba(58, 55, 55, 0.4);
+	width: 60vw;
+	max-width: 500px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+}
+
+nav ul li {
+	padding: 0.5rem;
+	margin-left: 0.4rem;
+	cursor: pointer;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+nav ul li a:hover {
+	color: orange;
+	opacity: 0.4;
+}

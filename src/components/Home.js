@@ -1,55 +1,37 @@
 import React from 'react';
-import Headshot from '../res/headshot_1500.png';
+import Sidebar from './Sidebar';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 	return (
 		<section className='container-main'>
+			<Sidebar />
 			<div className='container-home'>
-				<div className='sidebar'>
-					<img
-						src={Headshot}
-						alt='headshot'
-						width='200'
-						className='img-headshot'></img>
-					<div className='sidebar--deets'>
-						<h3>Tyler Lowes</h3>
-						<h5>Web Developer</h5>
-						<h5>Calgary, AB</h5>
-						{/* <h6>Skills:</h6> */}
-						<hr />
-						<ul className='skills'>
-							<li>
-								Javascript(ES6)
-								<br />
-								******
-							</li>
-							<li>
-								HTML5
-								<br />
-								******
-							</li>
-							<li>
-								CSS
-								<br />
-								******
-							</li>
-							<li>
-								React
-								<br />
-								******
-							</li>
-							<li>
-								Webpack
-								<br />
-								******
-							</li>
-						</ul>
-					</div>
-				</div>
 				<div className='main'>
-					<h1>HELLO!</h1>
-					<p>I am a web developer from Calgary, AB</p>
+					<header>
+						<h1>Hello!</h1>
+					</header>
+					<article>
+						<p>
+							My name is Ty, I am a self-taught web developer living in Calgary,
+							Alberta
+						</p>
+						<p>I began leardnin in October of 2020</p>
+						<div class='btns'>
+							<Link to='/Portfolio' className='action-btn'>
+								View Projects
+							</Link>
+							<Link to='Contact' className='action-btn'>
+								Hire me!
+							</Link>
+						</div>
+					</article>
+					<div class='social-links'>
+						<span>Github</span>
+
+						<span>LinkedIn</span>
+					</div>
 				</div>
 			</div>
 		</section>
