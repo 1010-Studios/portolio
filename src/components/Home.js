@@ -28,9 +28,7 @@ const Home = () => {
 						</div>
 					</article>
 					<div class='social-links'>
-						<span>Github</span>
-
-						<span>LinkedIn</span>
+						<span>Github</span> | <span>LinkedIn</span>
 					</div>
 				</div>
 			</div>

@@ -30,8 +30,14 @@ nav ul li {
 }
 
 nav ul li a {
+	width: 0;
+	height: 0;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 60px solid orange;
 	text-decoration: none;
 	color: white;
+	transition: all 0.3s ease;
 }
 
 nav ul li a:hover {

@@ -1,6 +1,7 @@
 .App {
 	background: rgba(58, 55, 55, 0.8);
 	min-height: 100vh;
+	max-height: 100vh;
 }
 
 /**********************
