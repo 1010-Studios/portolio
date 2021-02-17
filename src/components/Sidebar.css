@@ -4,11 +4,6 @@ Sidebar
 
 .sidebar {
 	flex: 1;
-	/* background-image: linear-gradient(
-		to right,
-		rgba(58, 55, 55, 0.7),
-		rgba(26, 15, 15, 0.2)
-	); */
 	background-image: repeating-linear-gradient(
 			45deg,
 			rgba(224, 123, 50, 0.06) 0px,
@@ -33,11 +28,12 @@ Sidebar
 
 .img-headshot {
 	border-radius: 50%;
-	border: 6px double rgba(235, 173, 2, 0.486);
+	border: 6px double rgba(223, 139, 14, 0.5);
 	height: 40%;
 	min-height: 200px;
 	max-height: 600px;
 	margin-bottom: 1rem;
+	z-index: 500;
 }
 
 .sidebar--deets {
@@ -66,11 +62,13 @@ Sidebar
 		top: 0;
 		left: 0;
 		background: none;
+		z-index: 999;
 	}
 
 	.img-headshot {
 		min-height: 100px;
 		max-width: 100px;
+		z-index: 999;
 	}
 	.sidebar--deets {
 		display: none;

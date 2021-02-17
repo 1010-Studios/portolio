@@ -6,8 +6,16 @@ const Contact = () => {
 		<section className='container-main'>
 			<div className='container-contact'>
 				<div className='contact-blurb'>
+					<p>
+						Have a project that needs doin?
+						<br />
+						Or want to hire me?
+					</p>
 					<p>Contact me for more details!</p>
-					<p>Though I definitely need to implement this form</p>
+					<p>
+						Though I definitely need to implement this form before you can do
+						that
+					</p>
 					<div className='form-container'>
 						<form>
 							<label>

@@ -5,7 +5,7 @@ const Portfolio = () => {
 	return (
 		<section className='container-main'>
 			<div className='container-portfolio'>
-				<p>No Projects yet! Maybe yours could be first?</p>
+				<p>No Projects yet! I should probs populate this</p>
 			</div>
 		</section>
 	);

@@ -13,7 +13,7 @@ const Navbar = () => {
 				</li>
 				<li>
 					<NavLink to='/Portfolio' activeClassName='active'>
-						Portfolio
+						Projects
 					</NavLink>
 				</li>
 				{/* <li>

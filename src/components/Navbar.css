@@ -6,14 +6,6 @@ nav {
 	display: flex;
 	justify-content: center;
 	margin-top: 0;
-	background-image: repeating-linear-gradient(
-			45deg,
-			rgba(224, 123, 50, 0.06) 0px,
-			rgba(224, 123, 50, 0.06) 2px,
-			transparent 2px,
-			transparent 4px
-		),
-		linear-gradient(90deg, rgb(180, 180, 196), rgb(23, 23, 27));
 }
 
 nav ul {
@@ -21,7 +13,7 @@ nav ul {
 	right: 0;
 	margin-top: 0;
 	padding: 0;
-	background: rgba(58, 55, 55, 0.4);
+	background: rgba(23, 23, 27, 0.3);
 	width: 60vw;
 	max-width: 500px;
 	border-bottom-left-radius: 15px;
@@ -40,6 +32,7 @@ nav ul li a {
 	text-decoration: none;
 	color: white;
 	transition: color 0.3s ease;
+	outline: 0;
 }
 
 .active {
@@ -55,9 +48,12 @@ nav ul li a:hover {
 	opacity: 0.6;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
 	.nav ul {
 		width: 100vw;
+		background: rgba(23, 23, 27, 1);
+		/* background: orange; */
+		z-index: 800;
 	}
 
 	.active {
