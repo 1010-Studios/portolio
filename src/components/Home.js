@@ -31,20 +31,22 @@ const Home = () => {
 							<span>Github</span> | <span>LinkedIn</span>
 						</div>
 						<br />
-						<p className='about-blurb'>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-							voluptates corrupti at delectus accusamus ducimus suscipit earum
-							neque fugit inventore.
-							<br />
-							<br />
-							Yadda yadda yadda Lorem, ipsum dolor sit amet consectetur
-							adipisicing elit. Non sunt necessitatibus officia. Ea rerum
-							asperiores, expedita, dolorem velit sequi enim mollitia iusto
-							corporis maxime deleniti exercitationem facilis sunt quis dolore
-							deserunt quas assumenda, voluptates voluptatem quos odio amet
-							accusantium itaque dolores. Iure ducimus eius nisi hic excepturi
-							labore, saepe ratione? /rant
-						</p>
+						<div className='home-bio'>
+							<p className='about-blurb'>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+								voluptates corrupti at delectus accusamus ducimus suscipit earum
+								neque fugit inventore.
+								<br />
+								<br />
+								Yadda yadda yadda Lorem, ipsum dolor sit amet consectetur
+								adipisicing elit. Non sunt necessitatibus officia. Ea rerum
+								asperiores, expedita, dolorem velit sequi enim mollitia iusto
+								corporis maxime deleniti exercitationem facilis sunt quis dolore
+								deserunt quas assumenda, voluptates voluptatem quos odio amet
+								accusantium itaque dolores. Iure ducimus eius nisi hic excepturi
+								labore, saepe ratione? /rant
+							</p>
+						</div>
 					</article>
 				</div>
 			</div>

@@ -75,6 +75,7 @@ header h1 {
 
 .about-blurb {
 	max-width: 800px;
+	margin: 1rem -6rem;
 }
 
 .action-btn {
@@ -97,6 +98,13 @@ header h1 {
 .action-btn:hover {
 	opacity: 0.7;
 	border: 2px solid rgba(223, 139, 14, 0.9);
+}
+
+.home-bio {
+	border-bottom: 4px solid rgba(223, 139, 14, 0.7);
+	border-right: 6rem solid transparent;
+	border-left: 6rem solid transparent;
+	border-top: 4px solid rgba(223, 139, 14, 0.7);
 }
 
 @media only screen and (max-width: 600px) {
