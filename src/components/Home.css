@@ -1,6 +1,61 @@
 /**********************
 Main
 **********************/
+header {
+	width: 50%;
+	font-size: 2rem;
+}
+
+header h1 {
+	/* color: grey; */
+}
+
+@keyframes grow {
+	0% {
+		transform: rotate(0deg);
+		font-size: 0rem;
+	}
+	10% {
+		transform: rotate(-15deg);
+		color: rgba(223, 139, 14, 0.7);
+	}
+	20% {
+		transform: rotate(5deg);
+		font-size: 1rem;
+	}
+	50% {
+		transform: rotate(-15deg);
+		color: rgba(223, 139, 14, 0.7);
+	}
+	60% {
+		transform: rotate(5deg);
+		color: rgba(223, 139, 14, 0.7);
+		font-size: 2rem;
+	}
+	90% {
+		transform: rotate(-15deg);
+		color: rgba(223, 139, 14, 0.7);
+	}
+	100% {
+		transform: rotate(0deg);
+		color: white;
+	}
+}
+
+header {
+	position: relative;
+	border-bottom: 4px solid rgba(223, 139, 14, 0.7);
+	border-right: 6rem solid transparent;
+	border-left: 6rem solid transparent;
+	border-top: 4px solid rgba(223, 139, 14, 0.7);
+}
+
+header h1 {
+	animation-name: grow;
+	animation-duration: 3s;
+	/* animation-iteration-count: infinite; */
+}
+
 .container-home {
 	display: flex;
 	width: 100%;
@@ -34,7 +89,7 @@ Main
 	background-color: rgba(223, 139, 14, 0.9);
 	border-radius: 15px;
 	width: 38%;
-	max-width: 200px;
+	max-width: 250px;
 	text-align: center;
 	transition: all 0.3s ease;
 }
@@ -45,20 +100,30 @@ Main
 }
 
 @media only screen and (max-width: 600px) {
+	header {
+		border-top: none;
+	}
+	header h1 {
+		animation: none;
+		font-size: 1.2rem;
+	}
 	.main {
 		margin-top: 1rem;
 		max-width: 90vw;
-		/* border: 2px solid blue; */
 	}
 
 	.btns {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
 		margin: 0;
 		max-width: 400px;
 	}
 
 	.action-btn {
-		max-width: 100px;
-		max-height: 50px;
+		width: 200px;
+		height: 1.3rem;
 		font-size: 0.75rem;
 		padding: 0.2rem;
 	}

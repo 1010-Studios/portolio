@@ -10,14 +10,16 @@ const Home = () => {
 			<div className='container-home'>
 				<div className='main'>
 					<header>
-						<h1>Hello!</h1>
+						<span>
+							<h1>Hello!</h1>
+						</span>
 					</header>
 					<article>
 						<p>
 							My name is Ty, I am a self-taught web developer living in Calgary,
 							Alberta
 						</p>
-						<div class='btns'>
+						<div className='btns'>
 							<Link to='/Portfolio' className='action-btn'>
 								View Portfolio
 							</Link>
@@ -25,13 +27,14 @@ const Home = () => {
 								Hire me!
 							</Link>
 						</div>
-						<div class='social-links'>
+						<div className='social-links'>
 							<span>Github</span> | <span>LinkedIn</span>
 						</div>
 						<br />
 						<p className='about-blurb'>
-							I began my journey into web development as a hobby project in
-							September of 2020, and quickly fell in love with it.
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+							voluptates corrupti at delectus accusamus ducimus suscipit earum
+							neque fugit inventore.
 							<br />
 							<br />
 							Yadda yadda yadda Lorem, ipsum dolor sit amet consectetur
@@ -40,7 +43,7 @@ const Home = () => {
 							corporis maxime deleniti exercitationem facilis sunt quis dolore
 							deserunt quas assumenda, voluptates voluptatem quos odio amet
 							accusantium itaque dolores. Iure ducimus eius nisi hic excepturi
-							labore, saepe ratione?
+							labore, saepe ratione? /rant
 						</p>
 					</article>
 				</div>
