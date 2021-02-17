@@ -31,7 +31,7 @@ const Home = () => {
 						<br />
 						<p className='about-blurb'>
 							I began my journey into web development as a hobby project in
-							October of 2020, and quickly fell in love with it.
+							September of 2020, and quickly fell in love with it.
 							<br />
 							<br />
 							Yadda yadda yadda Lorem, ipsum dolor sit amet consectetur
