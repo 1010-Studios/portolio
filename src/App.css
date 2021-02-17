@@ -1,5 +1,12 @@
 .App {
-	background: rgba(25, 25, 31, 0.8);
+	background-image: repeating-linear-gradient(
+			45deg,
+			rgba(224, 123, 50, 0.06) 0px,
+			rgba(224, 123, 50, 0.06) 2px,
+			transparent 2px,
+			transparent 4px
+		),
+		linear-gradient(45deg, rgb(92, 92, 100), rgb(23, 23, 27));
 	min-height: 100vh;
 	/* max-height: 100vh; */
 	font-family: 'Poppins', sans-serif;

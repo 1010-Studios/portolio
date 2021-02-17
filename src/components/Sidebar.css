@@ -4,12 +4,21 @@ Sidebar
 
 .sidebar {
 	flex: 1;
-	background-image: linear-gradient(
+	/* background-image: linear-gradient(
 		to right,
 		rgba(58, 55, 55, 0.7),
 		rgba(26, 15, 15, 0.2)
-	);
+	); */
+	background-image: repeating-linear-gradient(
+			45deg,
+			rgba(224, 123, 50, 0.06) 0px,
+			rgba(224, 123, 50, 0.06) 2px,
+			transparent 2px,
+			transparent 4px
+		),
+		linear-gradient(45deg, rgba(92, 92, 100, 0.6), rgba(23, 23, 27, 0.6));
 	border-radius: 15px;
+	border-left: 2px solid transparent;
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;

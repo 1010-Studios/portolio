@@ -16,8 +16,8 @@ const Home = () => {
 					</header>
 					<article>
 						<p>
-							My name is Ty, I am a self-taught web developer living in Calgary,
-							Alberta
+							My name is Ty!
+							<br />I am a web developer living in Calgary, Alberta.
 						</p>
 						<div className='btns'>
 							<Link to='/Portfolio' className='action-btn'>

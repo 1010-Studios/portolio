@@ -15,7 +15,7 @@ const Sidebar = () => {
 					<li>
 						React.js
 						<br />
-						****
+						*****
 					</li>
 					<li>
 						Javascript(ES6)
