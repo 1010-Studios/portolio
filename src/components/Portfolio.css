@@ -1,0 +1,9 @@
+.container-portfolio {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	margin-top: 4rem;
+	width: 100vw;
+	height: 600px;
+}

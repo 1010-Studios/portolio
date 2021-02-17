@@ -1,11 +1,12 @@
 import React from 'react';
+import './Portfolio.css';
 
 const Portfolio = () => {
 	return (
 		<section className='container-main'>
-			<h5>Port Section!</h5>
-			<p>This is a test!</p>
-			<p>This is a test!</p>
+			<div className='container-portfolio'>
+				<p>No Projects yet! Maybe yours could be first?</p>
+			</div>
 		</section>
 	);
 };

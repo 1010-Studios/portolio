@@ -6,7 +6,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	margin-top: 0;
-	background: rgba(58, 55, 55, 0.2);
+	background: rgba(58, 55, 55, 0.4);
 }
 
 nav ul {
@@ -30,17 +30,32 @@ nav ul li {
 }
 
 nav ul li a {
-	width: 0;
-	height: 0;
-	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-top: 60px solid orange;
 	text-decoration: none;
 	color: white;
-	transition: all 0.3s ease;
+	transition: color 0.3s ease;
+}
+
+.active {
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 8px solid rgba(223, 139, 14, 0.9);
 }
 
 nav ul li a:hover {
-	color: orange;
+	color: rgba(223, 139, 14, 0.9);
 	opacity: 0.4;
+}
+
+@media only screen and (max-width: 600px) {
+	.nav ul {
+		width: 100vw;
+	}
+
+	.active {
+		border-left: 3px solid transparent;
+		border-right: 3px solid transparent;
+		border-bottom: 2px solid rgba(223, 139, 14, 0.9);
+	}
 }

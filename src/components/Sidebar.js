@@ -1,5 +1,5 @@
 import React from 'react';
-import Headshot from '../res/headshot_1500.png';
+import Headshot from '../res/headshot_600.png';
 import './Sidebar.css';
 
 const Sidebar = () => {
@@ -13,7 +13,7 @@ const Sidebar = () => {
 			<div className='sidebar--deets'>
 				<ul className='skills'>
 					<li>
-						React
+						React.js
 						<br />
 						****
 					</li>

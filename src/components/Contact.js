@@ -7,6 +7,7 @@ const Contact = () => {
 			<div className='container-contact'>
 				<div className='contact-blurb'>
 					<p>Contact me for more details!</p>
+					<p>Though I definitely need to implement this form</p>
 				</div>
 				<div className='form-container'>
 					<form>
