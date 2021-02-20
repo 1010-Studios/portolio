@@ -1,11 +1,16 @@
 .container-contact {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: flex-start;
 	text-align: center;
 	margin-top: 4rem;
 	color: white;
 	min-height: 90vh;
+}
+
+.contact-blurb {
+	font-size: 1.1rem;
+	margin: 2rem;
 }
 
 .form-container {

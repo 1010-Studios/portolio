@@ -6,52 +6,43 @@ const Contact = () => {
 		<section className='container-main'>
 			<div className='container-contact'>
 				<div className='contact-blurb'>
-					<p>
-						Have a project that needs doin?
+					<p>Drop me a line so we can work together!</p>
+				</div>
+				<div className='form-container'>
+					<form>
+						Name:
+						<label>
+							<input
+								className='form-input'
+								type='text'
+								placeholder='Your Name'
+								id='name'
+								required
+							/>
+						</label>
+						Email:
+						<label>
+							<input
+								className='form-input'
+								type='email'
+								placeholder='Your Email'
+								id='email'
+								required
+							/>
+						</label>
 						<br />
-						Or want to hire me?
-					</p>
-					<p>Contact me for more details!</p>
-					<p>
-						Though I definitely need to implement this form before you can do
-						that
-					</p>
-					<div className='form-container'>
-						<form>
-							Name:
-							<label>
-								<input
-									className='form-input'
-									type='text'
-									placeholder='Your Name'
-									id='name'
-									required
-								/>
-							</label>
-							Email:
-							<label>
-								<input
-									className='form-input'
-									type='email'
-									placeholder='Your Email'
-									id='email'
-									required
-								/>
-							</label>
-							<br />
-							Subject:
-							<label>
-								<textarea
-									name='subject'
-									id='subject'
-									cols='30'
-									rows='10'
-									placeholder='Write something...'
-								/>
-							</label>
-							<input type='submit' value='submit' className='submit-btn' />
-						</form>
-					</div>
+						Subject:
+						<label>
+							<textarea
+								name='subject'
+								id='subject'
+								cols='30'
+								rows='10'
+								placeholder='Write something...'
+							/>
+						</label>
+						<input type='submit' value='submit' className='submit-btn' />
+					</form>
 				</div>
 			</div>
 		</section>
