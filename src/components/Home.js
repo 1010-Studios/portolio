@@ -55,6 +55,7 @@ const Home = () => {
 								deserunt quas assumenda, voluptates voluptatem quos odio amet
 								accusantium itaque dolores. Iure ducimus eius nisi hic excepturi
 								labore, saepe ratione? /rant <br />
+								lorem500
 							</p>
 						</div>
 					</article>

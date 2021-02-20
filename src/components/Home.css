@@ -6,10 +6,6 @@ header {
 	font-size: 2rem;
 }
 
-header h1 {
-	/* color: grey; */
-}
-
 @keyframes grow {
 	0% {
 		transform: rotate(0deg);

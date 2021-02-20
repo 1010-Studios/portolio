@@ -13,11 +13,6 @@ const Sidebar = () => {
 			<div className='sidebar--deets'>
 				<ul className='skills'>
 					<li>
-						React.js
-						<br />
-						*****
-					</li>
-					<li>
 						Javascript(ES6)
 						<br />
 						******
@@ -31,6 +26,11 @@ const Sidebar = () => {
 						CSS
 						<br />
 						********
+					</li>
+					<li>
+						React.js
+						<br />
+						*****
 					</li>
 					<li>
 						Node.js

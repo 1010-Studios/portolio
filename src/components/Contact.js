@@ -20,11 +20,18 @@ const Contact = () => {
 						<form>
 							<label>
 								Name:
-								<input type='text' placeholder='Your Name' required />
+								<input
+									className='form-input'
+									type='text'
+									placeholder='Your Name'
+									id='name'
+									required
+								/>
 							</label>
 							<label>
 								Email:
 								<input
+									className='form-input'
 									type='email'
 									placeholder='Your Email'
 									id='email'
@@ -32,8 +39,8 @@ const Contact = () => {
 								/>
 							</label>
 							<br />
-							Subject:
 							<label>
+								Subject:
 								<textarea
 									name='subject'
 									id='subject'
