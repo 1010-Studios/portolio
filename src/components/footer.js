@@ -6,7 +6,7 @@ const Footer = () => {
 	return (
 		<footer>
 			<span>Website handcrafted by</span>
-			<span> &copy; Tyler Lowes, 2021</span>
+			<span> &copy; 1010 Studios, 2021</span>
 			<span className='social-links'>
 				<a href='https://github.com/1010-Studios' target='#'>
 					<i className='fab fa-github-square' />
