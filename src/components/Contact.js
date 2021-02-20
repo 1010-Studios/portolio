@@ -1,7 +1,29 @@
 import React from 'react';
 import './Contact.css';
+import emailjs from 'emailjs-com';
+import { init } from 'emailjs-com';
+init('user_iKtoYMSiGw1UWAlAlcp6Q');
 
 const Contact = () => {
+	const sendEmail = (e) => {
+		const name = document.getElementById('name').value;
+		const email = document.getElementById('email').value;
+		const message = document.getElementById('subject').value;
+		e.preventDefault();
+		const params = {
+			from_name: name,
+			message: message,
+			reply_to: email,
+		};
+		emailjs.send('service_8uj3m3w', 'template_r0ciihi', params).then(
+			function (response) {
+				console.log('SUCCESS!', response.status, response.text);
+			},
+			function (error) {
+				console.log('FAILED...', error);
+			}
+		);
+	};
 	return (
 		<section className='container-main'>
 			<div className='container-contact'>
@@ -9,7 +31,7 @@ const Contact = () => {
 					<p>Drop me a line so we can work together!</p>
 				</div>
 				<div className='form-container'>
-					<form>
+					<form id='contactForm'>
 						Name:
 						<label>
 							<input
@@ -41,7 +63,12 @@ const Contact = () => {
 								placeholder='Write something...'
 							/>
 						</label>
-						<input type='submit' value='submit' className='submit-btn' />
+						<input
+							onClick={sendEmail}
+							type='submit'
+							value='submit'
+							className='submit-btn'
+						/>
 					</form>
 				</div>
 			</div>
