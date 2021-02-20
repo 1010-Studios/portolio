@@ -5,6 +5,8 @@ import './footer.css';
 const Footer = () => {
 	return (
 		<footer>
+			<span>Website handcrafted by</span>
+			<span> &copy; Tyler Lowes, 2021</span>
 			<span className='social-links'>
 				<a href='https://github.com/1010-Studios' target='#'>
 					<i className='fab fa-github-square' />
@@ -13,7 +15,6 @@ const Footer = () => {
 					<i className='fab fa-linkedin' />
 				</a>
 			</span>
-			<span> &copy; Tyler Lowes, 2021</span>
 		</footer>
 	);
 };

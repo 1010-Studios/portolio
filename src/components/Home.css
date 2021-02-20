@@ -73,6 +73,7 @@ header h1 {
 
 .tagline {
 	position: relative;
+	font-size: 1rem;
 	z-index: 600;
 }
 
@@ -162,5 +163,9 @@ header h1 {
 		height: 1.3rem;
 		font-size: 0.75rem;
 		padding: 0.2rem;
+	}
+
+	.about-blurb {
+		font-size: 0.9rem;
 	}
 }
