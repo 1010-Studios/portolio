@@ -5,25 +5,34 @@ import { init } from 'emailjs-com';
 init('user_iKtoYMSiGw1UWAlAlcp6Q');
 
 const Contact = () => {
-	const sendEmail = (e) => {
-		const name = document.getElementById('name').value;
-		const email = document.getElementById('email').value;
-		const message = document.getElementById('subject').value;
+	const validateForm = (e) => {
+		e.preventDefault();
+		const name = document.getElementById('name');
+		const email = document.getElementById('email');
+		const message = document.getElementById('subject');
+		console.log(name.validity.valid);
+
+		if (name.validity.valid && email.validity.valid && message.validity.valid) {
+			sendEmail(name, email, message);
+		} else {
+			console.log('Not Valid!');
+		}
+	};
+	const sendEmail = (name, email, message) => {
 		const form = document.getElementById('contactForm');
 		const submitbtn = document.querySelector('.submit-btn');
 		const emailSent = document.querySelector('.email-sent');
-		e.preventDefault();
 		const params = {
-			from_name: name,
-			message: message,
-			reply_to: email,
+			from_name: name.value,
+			message: message.value,
+			reply_to: email.value,
 		};
 		emailjs.send('service_8uj3m3w', 'template_r0ciihi', params).then(
 			function (response) {
 				console.log('SUCCESS!', response.status, response.text);
 				submitbtn.classList.toggle('hidden');
 				emailSent.classList.toggle('hidden');
-				form.classList.add('sent');
+				form.classList.toggle('sent');
 			},
 			function (error) {
 				console.log('FAILED...', error);
@@ -67,6 +76,7 @@ const Contact = () => {
 								cols='30'
 								rows='10'
 								placeholder='Write something...'
+								required
 							/>
 						</label>
 						<div className='email-sent hidden'>
@@ -74,7 +84,7 @@ const Contact = () => {
 							<span> Message sent!</span>
 						</div>
 						<input
-							onClick={sendEmail}
+							onClick={validateForm}
 							type='submit'
 							value='submit'
 							className='submit-btn'
