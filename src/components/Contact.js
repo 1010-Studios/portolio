@@ -9,6 +9,9 @@ const Contact = () => {
 		const name = document.getElementById('name').value;
 		const email = document.getElementById('email').value;
 		const message = document.getElementById('subject').value;
+		const form = document.getElementById('contactForm');
+		const submitbtn = document.querySelector('.submit-btn');
+		const emailSent = document.querySelector('.email-sent');
 		e.preventDefault();
 		const params = {
 			from_name: name,
@@ -18,6 +21,9 @@ const Contact = () => {
 		emailjs.send('service_8uj3m3w', 'template_r0ciihi', params).then(
 			function (response) {
 				console.log('SUCCESS!', response.status, response.text);
+				submitbtn.classList.toggle('hidden');
+				emailSent.classList.toggle('hidden');
+				form.classList.add('sent');
 			},
 			function (error) {
 				console.log('FAILED...', error);
@@ -63,6 +69,10 @@ const Contact = () => {
 								placeholder='Write something...'
 							/>
 						</label>
+						<div className='email-sent hidden'>
+							<i className='fas fa-check' />
+							<span> Message sent!</span>
+						</div>
 						<input
 							onClick={sendEmail}
 							type='submit'
@@ -77,21 +87,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-/*
-<form>
-						<label for='name'>Name:</label>
-						<input type='text' placeholder='Your Name' id='name' required />
-						<label for='email'>Email:</label>
-						<input type='email' placeholder='Your Email' id='email' required />
-						<label for='subject'>Subject:</label>
-						<textarea
-							name='subject'
-							id='subject'
-							cols='30'
-							rows='10'
-							placeholder='Write something...'
-						/>
-						<input type='submit' value='submit' />
-					</form>
-*/
