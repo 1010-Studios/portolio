@@ -15,7 +15,9 @@ const Contact = () => {
 		if (name.validity.valid && email.validity.valid && message.validity.valid) {
 			sendEmail(name, email, message);
 		} else {
-			console.log('Not Valid!');
+			if (!name.validity.valid) name.classList.toggle('error');
+			if (!email.validity.valid) email.classList.toggle('error');
+			if (!message.validity.valid) message.classList.toggle('error');
 		}
 	};
 	const sendEmail = (name, email, message) => {
