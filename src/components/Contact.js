@@ -20,6 +20,7 @@ const Contact = () => {
 			if (!message.validity.valid) message.classList.toggle('error');
 		}
 	};
+
 	const sendEmail = (name, email, message) => {
 		const form = document.getElementById('contactForm');
 		const submitbtn = document.querySelector('.submit-btn');

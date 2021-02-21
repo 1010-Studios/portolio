@@ -1,8 +1,10 @@
 import './App.css';
+import React from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/footer';
 import { Home, Portfolio, Aboot, Contact } from './components/Content';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
 
 function App() {
 	return (
