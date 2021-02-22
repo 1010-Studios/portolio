@@ -1,6 +1,6 @@
-### PORTFOLIO PROJECT
+# PORTFOLIO PROJECT
 
-# Include:
+## Include:
 
 -Name
 -Location
@@ -8,7 +8,7 @@
 -Portfolio Page
 -Contact
 
-# Components:
+## Components:
 
 Header: Github -- Linkedin
 Nav: Home--About--Portfolio--Contact (links)
