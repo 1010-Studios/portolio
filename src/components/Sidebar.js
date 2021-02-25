@@ -29,8 +29,8 @@ const Sidebar = () => {
 						<p className='skill-title'>React.js</p>
 					</div>
 					<div>
-						<i className='fab fa-node-js'></i>
-						<p className='skill-title'>Node.js</p>
+						<i className='fab fa-git-square'></i>
+						<p className='skill-title'>Git</p>
 					</div>
 					<div>
 						<i className='fab fa-google'></i>
