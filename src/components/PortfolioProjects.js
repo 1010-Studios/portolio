@@ -9,6 +9,6 @@ export default [
 		alt: 'Screenshot of Photography Template Site',
 		tags: ['html', 'css', 'js', 'shapedivider.app'],
 		desc:
-			'A simple Photography portfolio template. I used images from a tutorial I had lying around',
+			'A simple Photography portfolio template. \n\nI really tried to focused moreso on the design rather than the content.',
 	},
 ];

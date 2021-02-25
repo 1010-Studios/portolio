@@ -42,7 +42,7 @@
 .port-item-tagList {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	max-width: 70%;
 	list-style: none;
 	margin: 0.4rem auto;
 }
@@ -53,10 +53,10 @@
 	text-transform: uppercase;
 	font-size: 0.7rem;
 	font-weight: bold;
-	min-width: 10%;
+	min-width: 30px;
 	border-radius: 5px;
 	padding: 0.1rem 0.2rem;
-	margin: 0 0.2rem;
+	margin: 0.1rem 0.2rem;
 }
 
 .port-item img {
@@ -69,7 +69,10 @@
 
 .port-item-desc {
 	min-height: 30%;
-	margin-bottom: 2rem;
+	margin: 0.5rem 1rem;
+}
+.port-item-desc p {
+	white-space: pre-wrap;
 }
 
 .port-item-hrefs {
