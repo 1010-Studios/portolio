@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	text-align: center;
-	margin-top: 4rem;
+	/* margin-top: 4rem; */
 	color: white;
 	min-height: 80vh;
 }
