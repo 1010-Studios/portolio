@@ -24,7 +24,7 @@ const Home = () => {
 								View Projects
 							</Link>
 							<Link to='Contact' className='action-btn contact'>
-								Hire me!
+								Contact Me!
 							</Link>
 						</div>
 						<div className='home-social-links'>

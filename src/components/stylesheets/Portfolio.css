@@ -1,10 +1,80 @@
-.container-portfolio {
+.port-container {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	/* flex-direction: column; */
+	flex-wrap: wrap;
+	justify-content: center;
 	text-align: center;
 	margin-top: 4rem;
 	width: 100vw;
 	min-height: 90vh;
 	color: white;
+}
+
+.port-item {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	background: rgba(200, 200, 200, 0.7);
+	width: 30%;
+	/* height: 80%; */
+	margin: 1%;
+	max-width: 800px;
+	min-width: 300px;
+	/* min-height: 100%; */
+	border-radius: 25px;
+	transition: all 0.3s ease-in-out;
+	/* box-shadow: 3px 3px 10px white; */
+}
+
+.port-item-title {
+	background-color: darkblue;
+	height: 20%;
+}
+
+.port-item-title h1 {
+	font-size: 1.2rem;
+}
+
+.port-item-hrefs {
+	position: absolute;
+	bottom: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+}
+.port-item-hrefs a {
+	text-decoration: none;
+	color: black;
+	margin: 1rem;
+	padding: 0.4rem;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+.port-item-tagList {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	color: black;
+}
+
+.port-item-tagList li {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	font-weight: bold;
+	border: 2px solid blue;
+	min-width: 25%;
+	border-radius: 15px;
+	padding: 0.4rem;
+	margin: 0 1rem 0.2rem 0;
+}
+
+/* .port-item:hover {
+	transform: scale(1.3);
+} */
+
+.port-item img {
+	margin: 0 auto;
+	max-width: 90%;
+	border-radius: 15px;
 }
