@@ -1,5 +1,5 @@
 import React from 'react';
-import './Contact.css';
+import './stylesheets/Contact.css';
 import emailjs from 'emailjs-com';
 import { init } from 'emailjs-com';
 init('user_iKtoYMSiGw1UWAlAlcp6Q');
@@ -31,13 +31,13 @@ const Contact = () => {
 			reply_to: email.value,
 		};
 		emailjs.send('service_8uj3m3w', 'template_r0ciihi', params).then(
-			function (response) {
+			function(response) {
 				console.log('SUCCESS!', response.status, response.text);
 				submitbtn.classList.toggle('hidden');
 				emailSent.classList.toggle('hidden');
 				form.classList.toggle('sent');
 			},
-			function (error) {
+			function(error) {
 				console.log('FAILED...', error);
 			}
 		);

@@ -1,6 +1,6 @@
 import React from 'react';
 import Headshot from '../res/headshot_600.png';
-import './Sidebar.css';
+import './stylesheets/Sidebar.css';
 
 const Sidebar = () => {
 	return (
