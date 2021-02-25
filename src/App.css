@@ -1,3 +1,8 @@
+:root {
+	--text-head: 'RocknRoll One', sans-serif;
+	--text-body: 'Livvic', sans-serif;
+}
+
 .App {
 	background-image: repeating-linear-gradient(
 			45deg,
@@ -8,7 +13,6 @@
 		),
 		linear-gradient(45deg, rgb(92, 92, 100), rgb(23, 23, 27));
 	min-height: 100vh;
-	font-family: 'Poppins', sans-serif;
 }
 
 /**********************
@@ -23,4 +27,5 @@ Main Content
 	height: 100%;
 	margin-right: auto;
 	margin-left: auto;
+	font-family: var(--text-body);
 }

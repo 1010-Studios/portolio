@@ -50,6 +50,7 @@ header {
 }
 
 header h1 {
+	font-family: var(--text-head);
 	animation-name: grow;
 	animation-duration: 3s;
 }
