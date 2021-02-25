@@ -3,7 +3,7 @@ footer .social-links {
 }
 
 footer {
-	position: absolute;
+	position: fixed;
 	display: block;
 	bottom: 0;
 	right: 0;
