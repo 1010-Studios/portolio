@@ -11,6 +11,7 @@ const Sidebar = () => {
 				width='500'
 				className='img-headshot'></img>
 			<div className='sidebar--deets'>
+				<h2>Tech Stack</h2>
 				<div className='skills'>
 					<div>
 						<i className='fab fa-js'></i>
