@@ -85,6 +85,7 @@ Sidebar
 		left: 0;
 		background: none;
 		z-index: 999;
+		border: none;
 	}
 
 	.img-headshot {
