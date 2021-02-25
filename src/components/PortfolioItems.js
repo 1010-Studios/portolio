@@ -7,11 +7,21 @@ function GenerateTagList({ tags }) {
 	return <ul className='port-item-tagList'>{tagList}</ul>;
 }
 
-const PortfolioItem = ({ title, url, git, picture, alt, tags, desc }) => {
+const PortfolioItem = ({
+	title,
+	url,
+	git,
+	createDate,
+	picture,
+	alt,
+	tags,
+	desc,
+}) => {
 	return (
 		<div className='port-item'>
 			<div className='port-item-title'>
 				<h3>{title}</h3>
+				<h5>Created: {createDate}</h5>
 			</div>
 			<div className='port-item-tags'>
 				<GenerateTagList tags={tags} />
