@@ -1,5 +1,4 @@
 import React from 'react';
-import PortfolioTag from './PortfolioTags';
 
 //Shares CSS with 'Portfolio'
 function GenerateTagList({ tags }) {
@@ -12,22 +11,32 @@ const PortfolioItem = ({ title, url, git, picture, alt, tags, desc }) => {
 	return (
 		<div className='port-item'>
 			<div className='port-item-title'>
-				<h1>{title}</h1>
+				<h3>{title}</h3>
 			</div>
 			<div className='port-item-tags'>
 				<GenerateTagList tags={tags} />
 			</div>
-			<img src={picture} alt={alt} />
-			<div className='port-item-desc'>
-				<p>{desc}</p>
+			<div>
+				<img src={picture} alt={alt} />
 			</div>
 			<div className='port-item-hrefs'>
-				<a href={url} target='#'>
-					Live View
-				</a>
-				<a href={git} target='#'>
-					Github
-				</a>
+				{url ? (
+					<a href={url} target='#'>
+						Live View
+					</a>
+				) : (
+					''
+				)}
+				{git ? (
+					<a href={git} target='#'>
+						Github
+					</a>
+				) : (
+					''
+				)}
+			</div>
+			<div className='port-item-desc'>
+				<p>{desc}</p>
 			</div>
 		</div>
 	);
