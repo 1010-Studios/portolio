@@ -41,7 +41,7 @@ Sidebar
 	border: 6px double rgba(223, 139, 14, 0.5);
 	height: 40%;
 	min-height: 200px;
-	max-height: 600px;
+	max-height: 400px;
 	margin-bottom: 1rem;
 	z-index: 500;
 }

@@ -8,7 +8,7 @@ const Sidebar = () => {
 			<img
 				src={Headshot}
 				alt='headshot'
-				width='500'
+				// width='500'
 				className='img-headshot'></img>
 			<div className='sidebar--deets'>
 				<h2>Tech Stack</h2>
