@@ -1,7 +1,19 @@
 import photoSite from '../res/port-photo.png';
 import todoSite from '../res/port-todo.png';
+import yahtzoo from '../res/port-yahtzoo.png';
 
 export default [
+	{
+		title: 'Yahtzoo! (A Yahtzee clone)',
+		url: 'https://ty-react-yahtzee.netlify.app',
+		git: 'https://github.com/1010-Studios/React-Yahtzoo.git',
+		createDate: 'March 2, 2021',
+		picture: yahtzoo,
+		alt: 'Screenshot of Yahtzoo App',
+		tags: ['react', 'html', 'css', 'js'],
+		desc:
+			'A 2-player hotseat clone of Yahtzee. \n\n Currently there are unlimited re-rolls for ease of testing.',
+	},
 	{
 		title: 'Photo Portfolio Template',
 		url: 'https://ty-portfolio-photosite.netlify.app/#',

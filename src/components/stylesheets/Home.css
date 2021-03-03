@@ -51,6 +51,7 @@ header {
 
 header h1 {
 	font-family: var(--text-head);
+	font-size: 2.2rem;
 	animation-name: grow;
 	animation-duration: 3s;
 }
@@ -74,7 +75,7 @@ header h1 {
 
 .tagline {
 	position: relative;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	z-index: 600;
 }
 
