@@ -5,7 +5,7 @@ Sidebar
 .sidebar {
 	flex: 1;
 	border-right: 5px solid transparent;
-	border-left: 50px solid var(--orange);
+	border-left: 10px solid var(--orange);
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
