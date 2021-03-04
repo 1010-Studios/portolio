@@ -43,59 +43,57 @@ const Contact = () => {
 		);
 	};
 	return (
-		<section className='container-main'>
-			<div className='container-contact'>
-				<div className='contact-blurb'>
-					<p>Drop me a line so we can work together!</p>
-				</div>
-				<div className='form-container'>
-					<form id='contactForm'>
-						Name:
-						<label>
-							<input
-								className='form-input'
-								type='text'
-								placeholder='Your Name'
-								id='name'
-								required
-							/>
-						</label>
-						Email:
-						<label>
-							<input
-								className='form-input'
-								type='email'
-								placeholder='Your Email'
-								id='email'
-								required
-							/>
-						</label>
-						<br />
-						Subject:
-						<label>
-							<textarea
-								name='subject'
-								id='subject'
-								cols='30'
-								rows='10'
-								placeholder='Write something...'
-								required
-							/>
-						</label>
-						<div className='email-sent hidden'>
-							<i className='fas fa-check' />
-							<span> Message sent!</span>
-						</div>
-						<input
-							onClick={validateForm}
-							type='submit'
-							value='submit'
-							className='submit-btn'
-						/>
-					</form>
-				</div>
+		<div className='container-contact'>
+			<div className='contact-blurb'>
+				<p>Drop me a line so we can work together!</p>
 			</div>
-		</section>
+			<div className='form-container'>
+				<form id='contactForm'>
+					Name:
+					<label>
+						<input
+							className='form-input'
+							type='text'
+							placeholder='Your Name'
+							id='name'
+							required
+						/>
+					</label>
+					Email:
+					<label>
+						<input
+							className='form-input'
+							type='email'
+							placeholder='Your Email'
+							id='email'
+							required
+						/>
+					</label>
+					<br />
+					Subject:
+					<label>
+						<textarea
+							name='subject'
+							id='subject'
+							cols='30'
+							rows='10'
+							placeholder='Write something...'
+							required
+						/>
+					</label>
+					<div className='email-sent hidden'>
+						<i className='fas fa-check' />
+						<span> Message sent!</span>
+					</div>
+					<input
+						onClick={validateForm}
+						type='submit'
+						value='submit'
+						className='submit-btn'
+					/>
+				</form>
+			</div>
+		</div>
 	);
 };
 

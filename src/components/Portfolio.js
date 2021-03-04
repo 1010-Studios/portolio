@@ -7,12 +7,13 @@ function GenerateItems() {
 	const portItems = PortfolioProjects.map((item) => (
 		<PortfolioItem {...item} />
 	));
-	return <div className='port-container'>{portItems}</div>;
+	return <div className='port-items'>{portItems}</div>;
 }
 
 const Portfolio = () => {
 	return (
-		<section className='container-main'>
+		<section className='container-port'>
+			<h1>Portfolio</h1>
 			<GenerateItems />
 		</section>
 	);

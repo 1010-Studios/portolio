@@ -3,32 +3,32 @@ NavBar
 **********************/
 
 nav {
-	/* position: absolute; */
-	display: flex;
-	/* justify-content: center; */
-	margin-top: 0;
-	height: 5vh;
-	width: 50%;
+	position: fixed;
+	top: 0;
+	width: 80%;
+	font-size: calc(0.5rem + 0.75vh);
+	background: rgba(50, 50, 50, 1);
+	z-index: 100;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
 }
 
 nav ul {
+	/* border: 2px solid orange; */
 	width: 100%;
 	padding: 0;
 	margin: 0 auto;
-	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
 	display: flex;
-	justify-content: space-around;
+	/* flex-direction: column; */
+	justify-content: flex-end;
 	list-style: none;
 	font-family: var(--text-head);
 	margin-right: 0.5rem;
-	font-size: calc(0.75rem + 1vh);
-	background: rgba(23, 23, 27, 0.4);
 }
 
 nav ul li {
 	padding: 0.5rem;
-	/* margin-left: 0.4rem; */
+	margin-right: 0.2rem;
 	cursor: pointer;
 }
 
@@ -52,11 +52,14 @@ nav ul li a:hover {
 	opacity: 0.6;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
+	.nav {
+		width: 100%;
+	}
+
 	.nav ul {
-		width: 100vw;
 		background: rgba(23, 23, 27, 1);
-		/* background: orange; */
+		justify-content: right;
 		z-index: 800;
 	}
 

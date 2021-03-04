@@ -4,27 +4,28 @@ footer .social-links {
 
 footer {
 	position: fixed;
-	display: block;
-	background: rgba(50, 50, 50, 0.6);
+	/* display: block; */
+	width: 80%;
+	background: rgba(50, 50, 50, 1);
 	bottom: 0;
-	right: 0;
+	right: 50%;
+	transform: translateX(50%);
 	text-align: right;
 	color: white;
-	font-size: 0.7rem;
-	min-width: 100%;
+	font-size: calc(0.5rem + 0.5vh);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
 }
 
 .fab {
 	font-size: 1.2rem;
 	color: rgba(223, 139, 14, 0.7);
 	padding: 0.2rem;
-	outline: none;
+	/* outline: none; */
 }
 
 @media only screen and (max-width: 600px) {
 	footer {
-		/* position: fixed; */
-		/* display: inline-block; */
 		margin: 0;
 		background-color: black;
 		width: 100vw;

@@ -3,9 +3,7 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	text-align: center;
-	/* margin-top: 4rem; */
 	color: white;
-	min-height: 90vh;
 }
 
 .contact-blurb {
@@ -18,7 +16,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-size: calc(1rem + 1vh);
+	font-size: calc(0.75rem + 1vh);
 	border-bottom: 4px solid rgba(223, 139, 14, 0.7);
 	border-right: 6rem solid transparent;
 	border-left: 6rem solid transparent;
@@ -29,7 +27,6 @@
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	font-size: calc(1rem + 1vh);
 	max-width: 870px;
 	background: rgba(190, 190, 190, 0.4);
 	border-radius: 15px;
@@ -47,7 +44,7 @@
 
 .form-container form input,
 #subject {
-	font-size: calc(0.5rem + 1vh);
+	font-size: calc(0.25rem + 1vh);
 	margin: 0.2rem;
 	width: 500px;
 	padding: 0.5rem;
@@ -107,7 +104,7 @@
 		width: 100%;
 	}
 	.form-container form {
-		width: 90vw;
+		width: 80vw;
 	}
 
 	#subject {
