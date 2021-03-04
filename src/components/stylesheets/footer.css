@@ -5,13 +5,13 @@ footer .social-links {
 footer {
 	position: fixed;
 	display: block;
-	background: rgba(224, 123, 50, 0.1);
+	background: rgba(50, 50, 50, 0.6);
 	bottom: 0;
 	right: 0;
 	text-align: right;
 	color: white;
 	font-size: 0.7rem;
-	width: 100%;
+	min-width: 100%;
 }
 
 .fab {
