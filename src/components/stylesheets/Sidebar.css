@@ -4,19 +4,8 @@ Sidebar
 
 .sidebar {
 	flex: 1;
-	/* background-image: repeating-linear-gradient(
-			45deg,
-			rgba(224, 123, 50, 0.06) 0px,
-			rgba(224, 123, 50, 0.06) 2px,
-			transparent 2px,
-			transparent 4px
-		),
-		linear-gradient(45deg, rgba(92, 92, 100, 0.6), rgba(23, 23, 27, 0.6)); */
-	border-radius: 15px;
 	border-right: 5px solid transparent;
 	border-left: 50px solid var(--orange);
-	/* border-top: 5px solid var(--orange); */
-	/* border-bottom: 30px solid var(--orange); */
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
@@ -28,12 +17,6 @@ Sidebar
 	margin-left: 2rem;
 	margin-top: 1rem;
 	max-height: 100vw;
-	/* min-height: 80vw; */
-	/* border-bottom: 20px solid transparent; */
-	border-bottom-left-radius: 50%;
-	border-bottom-right-radius: 50%;
-	border-top-left-radius: 50%;
-	border-top-right-radius: 50%;
 }
 
 .img-headshot {
@@ -57,7 +40,6 @@ Sidebar
 .skills {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	/* flex-direction: column; */
 	list-style: none;
 	padding: 0;
 }

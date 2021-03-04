@@ -43,7 +43,7 @@ const Home = () => {
 							</a>
 						</div>
 						<br />
-						<div className='home-bio'>
+						{/* <div className='home-bio'>
 							<p className='about-blurb'>
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
 								voluptates corrupti at delectus accusamus ducimus suscipit earum
@@ -59,7 +59,7 @@ const Home = () => {
 								labore, saepe ratione? /rant <br />
 								lorem500
 							</p>
-						</div>
+						</div> */}
 					</article>
 				</div>
 			</div>
