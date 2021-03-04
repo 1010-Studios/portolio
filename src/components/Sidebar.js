@@ -11,7 +11,7 @@ const Sidebar = () => {
 				// width='500'
 				className='img-headshot'></img>
 			<div className='sidebar--deets'>
-				{/* <h2>Skills</h2> */}
+				<h2>Skills</h2>
 				<div className='skills'>
 					<div>
 						<i className='fab fa-js'></i>
@@ -35,7 +35,7 @@ const Sidebar = () => {
 					</div>
 					<div>
 						<i className='fab fa-google'></i>
-						<p className='skill-title'>Google</p>
+						<p className='skill-title'>Googling</p>
 					</div>
 				</div>
 			</div>

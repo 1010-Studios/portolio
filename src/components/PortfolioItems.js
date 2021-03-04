@@ -19,12 +19,7 @@ const PortfolioItem = ({
 }) => {
 	return (
 		<div className='port-item'>
-			<div className='port-left'>
-				<div className='port-item-img'>
-					<img src={picture} alt={alt} />
-				</div>
-			</div>
-			<div className='port-right'>
+			<div className='port-top'>
 				<div className='port-item-title'>
 					<h3>{title}</h3>
 					<h5>Created: {createDate}</h5>
@@ -32,25 +27,34 @@ const PortfolioItem = ({
 				<div className='port-item-tags'>
 					<GenerateTagList tags={tags} />
 				</div>
-				<div className='port-desc'>
-					<div className='port-item-hrefs'>
-						{url ? (
-							<a href={url} target='#'>
-								Live View
-							</a>
-						) : (
-							''
-						)}
-						{git ? (
-							<a href={git} target='#'>
-								Github
-							</a>
-						) : (
-							''
-						)}
+			</div>
+			<div className='port-bottom'>
+				<div className='port-left'>
+					<div className='port-item-img'>
+						<img src={picture} alt={alt} />
 					</div>
-					<div className='port-item-desc'>
-						<p>{desc}</p>
+				</div>
+				<div className='port-right'>
+					<div className='port-desc'>
+						<div className='port-item-hrefs'>
+							{url ? (
+								<a href={url} target='#'>
+									Live View
+								</a>
+							) : (
+								''
+							)}
+							{git ? (
+								<a href={git} target='#'>
+									Github
+								</a>
+							) : (
+								''
+							)}
+						</div>
+						<div className='port-item-desc'>
+							<p>{desc}</p>
+						</div>
 					</div>
 				</div>
 			</div>

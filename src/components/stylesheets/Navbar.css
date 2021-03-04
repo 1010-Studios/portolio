@@ -3,9 +3,9 @@ NavBar
 **********************/
 
 nav {
-	position: fixed;
+	position: absolute;
 	top: 0;
-	width: 80%;
+	width: 100%;
 	font-size: calc(0.5rem + 0.75vh);
 	background: rgba(50, 50, 50, 1);
 	z-index: 100;
@@ -14,12 +14,10 @@ nav {
 }
 
 nav ul {
-	/* border: 2px solid orange; */
 	width: 100%;
 	padding: 0;
 	margin: 0 auto;
 	display: flex;
-	/* flex-direction: column; */
 	justify-content: flex-end;
 	list-style: none;
 	font-family: var(--text-head);

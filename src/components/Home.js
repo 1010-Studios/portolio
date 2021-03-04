@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 const Home = () => {
 	return (
 		<div className='container-home'>
-			<Sidebar />
 			<div className='main'>
 				<header>
 					<span>
@@ -60,6 +59,7 @@ const Home = () => {
 							</p>
 						</div> */}
 				</article>
+				<Sidebar />
 			</div>
 		</div>
 	);
