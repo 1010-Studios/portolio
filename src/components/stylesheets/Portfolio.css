@@ -20,13 +20,14 @@
 
 .port-items {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	/* flex-direction: column; */
 	align-items: center;
-	min-height: 100%;
+	/* min-height: 100%; */
 	overflow: auto;
 	overflow-x: hidden;
-	width: 90%;
-	margin-bottom: 5rem;
+	width: 100%;
+	/* margin-bottom: 5rem; */
 }
 
 .container-port h1 {
@@ -83,8 +84,8 @@ Titlecard
 	/* position: absolute; */
 	padding: 0.5rem;
 	background-color: var(--grey);
-	border-radius: 25px;
-	background: var(--orange);
+	/* border-radius: 25px; */
+	/* border: 2px solid green; */
 	width: 100%;
 	font-family: var(--text-head);
 }
@@ -187,18 +188,30 @@ Description
 	.container-port {
 		width: 100%;
 	}
-	.port-left {
-		display: none;
+
+	.port-items {
+		/* padding: 10rem; */
 	}
 
 	.port-item {
 		min-height: 80%;
 	}
 
+	.port-top {
+		width: 90%;
+	}
+
+	.port-left {
+		display: none;
+	}
 	.port-right {
 		width: 100%;
 		justify-content: left;
 		/* flex-direction: column; */
+	}
+
+	.port-item-title {
+		padding: 0.2rem;
 	}
 
 	.port-item-hrefs {

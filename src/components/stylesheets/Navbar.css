@@ -52,12 +52,14 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 600px) {
 	.nav {
+		top: 90%;
 		width: 100%;
 	}
 
 	.nav ul {
+		font-size: smaller;
 		background: rgba(23, 23, 27, 1);
-		justify-content: right;
+		justify-content: center;
 		z-index: 800;
 	}
 
