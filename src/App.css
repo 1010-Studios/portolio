@@ -46,7 +46,7 @@ a:focus {
 	flex-direction: column;
 	/* justify-content: flex-start; */
 	/* align-items: center; */
-	overflow: hidden;
+	overflow: auto;
 	width: 95%;
 	height: 90vh;
 	max-width: 2000px;
