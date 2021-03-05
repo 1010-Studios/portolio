@@ -15,11 +15,13 @@
 	font-size: calc(0.5rem + 1vh);
 	min-height: 100vh;
 	display: flex;
-
-	/* flex-direction: column; */
 	align-items: center;
 	justify-content: center;
 	overflow: hidden;
+}
+
+:focus {
+	outline: none;
 }
 
 a:hover,
@@ -29,8 +31,32 @@ a:focus {
 }
 
 /**********************
+	Scrollbars
+**********************/
+
+/* width */
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: green;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+/**********************
 	Main Content
-	**********************/
+**********************/
 .container-main {
 	position: relative;
 	/* transform: scale(1rem); */
@@ -46,15 +72,16 @@ a:focus {
 	flex-direction: column;
 	/* justify-content: flex-start; */
 	/* align-items: center; */
-	overflow: auto;
+	overflow: hidden;
 	width: 95%;
 	height: 90vh;
+	/* min-height: 100vh; */
 	max-width: 2000px;
 	border-left: 50px solid rgba(50, 50, 50, 0.2);
 	box-shadow: 10px 10px 20px rgba(50, 50, 50, 0.8);
 
 	/* max-width: 80%; */
-	margin: 1.5rem auto;
+	/* margin: 1.5rem auto; */
 	font-family: var(--text-body);
 }
 

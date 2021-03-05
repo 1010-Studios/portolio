@@ -38,6 +38,7 @@
 }
 
 .port-item {
+	flex-basis: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -48,31 +49,24 @@
 	border-radius: 5px;
 	box-shadow: 2px 5px 5px var(--grey);
 	margin: 0.5rem;
-	width: 100%;
-	/* overflow: auto; */
-	min-height: 60%;
 }
 
 .port-top {
 	width: 100%;
-	margin: 0;
 }
 .port-bottom {
+	margin: 0 auto;
 	display: flex;
-	width: 100%;
-}
-
-.port-left {
-	padding: 0 1rem;
+	justify-content: center;
+	width: 80%;
 }
 
 .port-right {
-	position: relative;
+	flex-basis: 50%;
 	width: 70%;
-	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 }
 
@@ -81,11 +75,8 @@ Titlecard
 ****************/
 
 .port-item-title {
-	/* position: absolute; */
 	padding: 0.5rem;
 	background-color: var(--grey);
-	/* border-radius: 25px; */
-	/* border: 2px solid green; */
 	width: 100%;
 	font-family: var(--text-head);
 }
@@ -138,8 +129,6 @@ Image
 
 .port-item img {
 	opacity: 0.7;
-	/* border-radius: 15px; */
-	width: 100%;
 }
 
 /****************
@@ -205,9 +194,7 @@ Description
 		display: none;
 	}
 	.port-right {
-		width: 100%;
-		justify-content: left;
-		/* flex-direction: column; */
+		flex-basis: 100%;
 	}
 
 	.port-item-title {

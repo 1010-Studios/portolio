@@ -1,11 +1,6 @@
 /**********************
 Main
 **********************/
-header {
-	/* width: 50%; */
-	/* font-size: calc(.5rem; */
-}
-
 @keyframes grow {
 	0% {
 		transform: rotate(0deg);
@@ -52,7 +47,6 @@ header {
 
 header h1 {
 	font-family: var(--text-head);
-	/* font-size: 2.2rem; */
 	animation-name: grow;
 	animation-duration: 3s;
 }
@@ -62,7 +56,6 @@ header h1 {
 	align-items: center;
 	width: 100%;
 	overflow: auto;
-	/* height: 100%; */
 }
 
 .main {
@@ -76,7 +69,6 @@ header h1 {
 	padding: 2rem;
 	text-align: center;
 	margin-top: 5vh;
-	/* max-width: 70vw; */
 }
 
 .tagline {

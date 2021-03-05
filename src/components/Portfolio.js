@@ -13,7 +13,7 @@ function GenerateItems() {
 const Portfolio = () => {
 	return (
 		<section className='container-port'>
-			<h1>Portfolio</h1>
+			{/* <h1>Portfolio</h1> */}
 
 			<GenerateItems />
 		</section>

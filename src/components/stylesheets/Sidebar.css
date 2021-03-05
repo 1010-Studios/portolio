@@ -4,8 +4,6 @@ Sidebar
 
 .sidebar {
 	flex: 1;
-	/* border-right: 5px solid transparent;
-	border-top: 10px solid var(--orange); */
 	border-bottom: 4px solid rgba(223, 139, 14, 0.7);
 	border-right: 6rem solid transparent;
 	border-left: 6rem solid transparent;
@@ -17,7 +15,6 @@ Sidebar
 	align-items: center;
 	text-align: center;
 	width: 60%;
-	/* max-width: 300px; */
 	margin-left: 2rem;
 	margin-top: 1rem;
 	max-height: 100vw;
@@ -50,7 +47,7 @@ Sidebar
 
 .skills {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	list-style: none;
 	padding: 0;
 }
@@ -70,23 +67,8 @@ Sidebar
 }
 
 @media only screen and (max-width: 600px) {
-	.sidebar {
-		position: absolute;
-		top: 0;
-		left: 0;
-		background: none;
-		z-index: 999;
-		border: none;
-	}
-
 	.img-headshot {
 		display: none;
-		top: -2vh;
-		left: -10vw;
-		height: 10vh;
-		min-height: 50px;
-		/* max-width: 100px; */
-		/* z-index: 999; */
 	}
 	.sidebar--deets {
 		display: none;
