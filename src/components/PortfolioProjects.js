@@ -26,6 +26,17 @@ export default [
 			'A simple Photography portfolio template. \n\nI really tried to focused moreso on the design rather than the content.',
 	},
 	{
+		title: 'Odin Project - Calculator',
+		url: 'https://ty-odinproject-calculator.netlify.app/',
+		git: 'https://github.com/1010-Studios/Odin-Project----Calculator.git',
+		createDate: 'December 31, 2020',
+		picture: todoSite,
+		alt: 'Screenshot of Odin Project - Calculator',
+		tags: ['html', 'css', 'js'],
+		desc:
+			'A calculator app with keyboard functionality. \n\n Created based on specs from The Odin Project',
+	},
+	{
 		title: 'Todo App',
 		url: 'https://ty-odin-todo.netlify.app/',
 		git: 'https://github.com/1010-Studios/DevEd-TODO.git',
