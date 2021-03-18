@@ -3,14 +3,12 @@ NavBar
 **********************/
 
 nav {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	width: 100%;
 	font-size: calc(0.5rem + 0.75vh);
 	background: rgba(50, 50, 50, 1);
 	z-index: 100;
-	border-bottom-left-radius: 15px;
-	border-bottom-right-radius: 15px;
 }
 
 nav ul {
@@ -18,7 +16,7 @@ nav ul {
 	padding: 0;
 	margin: 0 auto;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	list-style: none;
 	font-family: var(--text-head);
 	margin-right: 0.5rem;
@@ -28,6 +26,7 @@ nav ul li {
 	padding: 0.5rem;
 	margin-right: 0.2rem;
 	cursor: pointer;
+	margin: 0.4rem;
 }
 
 nav ul li a {
@@ -48,6 +47,9 @@ nav ul li a {
 nav ul li a:hover {
 	color: rgba(223, 139, 14, 0.9);
 	opacity: 0.6;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
+	border-bottom: 4px solid rgba(223, 139, 14, 0.9);
 }
 
 @media only screen and (max-width: 600px) {

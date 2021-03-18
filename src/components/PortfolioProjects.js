@@ -1,8 +1,21 @@
 import photoSite from '../res/port-photo.png';
 import todoSite from '../res/port-todo.png';
 import yahtzoo from '../res/port-yahtzoo.png';
+import calculator from '../res/port-calc.png';
+import drive from '../res/port-drive.png';
 
 export default [
+	{
+		title: 'Drive Clone',
+		url: 'https://drive-clone.netlify.app',
+		git: 'https://github.com/1010-Studios/drive-clone.git',
+		createDate: 'March 16, 2021',
+		picture: drive,
+		alt: 'Screenshot of Drive clone',
+		tags: ['react', 'bootstrap', 'firebase', 'html', 'css', 'js'],
+		desc:
+			'A clone of Google Drive.\n\n Testing Credentials: \nUser: Test3@test.ca\nPass: test12',
+	},
 	{
 		title: 'Yahtzoo! (A Yahtzee clone)',
 		url: 'https://ty-react-yahtzee.netlify.app',
@@ -26,11 +39,11 @@ export default [
 			'A simple Photography portfolio template. \n\nI really tried to focused moreso on the design rather than the content.',
 	},
 	{
-		title: 'Odin Project - Calculator',
+		title: 'JS Calculator',
 		url: 'https://ty-odinproject-calculator.netlify.app/',
 		git: 'https://github.com/1010-Studios/Odin-Project----Calculator.git',
 		createDate: 'December 31, 2020',
-		picture: todoSite,
+		picture: calculator,
 		alt: 'Screenshot of Odin Project - Calculator',
 		tags: ['html', 'css', 'js'],
 		desc:

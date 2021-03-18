@@ -34,6 +34,14 @@ const Sidebar = () => {
 						<p className='skill-title'>Git</p>
 					</div>
 					<div>
+						<i className='fab fa-github-square'></i>
+						<p className='skill-title'>Github</p>
+					</div>
+					<div>
+						<i className='fab fa-bootstrap'></i>
+						<p className='skill-title'>Bootstrap</p>
+					</div>
+					<div>
 						<i className='fab fa-google'></i>
 						<p className='skill-title'>Googling</p>
 					</div>

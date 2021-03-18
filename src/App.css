@@ -59,37 +59,22 @@ a:focus {
 **********************/
 .container-main {
 	position: relative;
-	/* transform: scale(1rem); */
+	padding: 0.5rem;
 	background: linear-gradient(
 		to bottom right,
 		rgba(50, 50, 50, 0.8),
 		rgba(100, 100, 100, 0.8)
 	);
-	border: 2px solid rgba(50, 50, 50, 0.6);
 	position: relative;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
-	/* justify-content: flex-start; */
-	/* align-items: center; */
 	overflow: hidden;
-	width: 95%;
-	height: 90vh;
+	width: 100vw;
 	/* min-height: 100vh; */
-	max-width: 2000px;
-	border-left: 50px solid rgba(50, 50, 50, 0.2);
 	box-shadow: 10px 10px 20px rgba(50, 50, 50, 0.8);
-
-	/* max-width: 80%; */
-	/* margin: 1.5rem auto; */
 	font-family: var(--text-body);
 }
-
-/* @media only screen and (min-width: 2500px) {
-	.container-main {
-		transform: scale(1.2);
-	}
-} */
 
 @media only screen and (max-width: 600px) {
 	.container-main {

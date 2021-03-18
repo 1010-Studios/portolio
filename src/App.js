@@ -9,8 +9,8 @@ function App() {
 	return (
 		<div className='App'>
 			<Router>
+				<Navbar />
 				<div className='container-main'>
-					<Navbar />
 					<Switch>
 						<Route exact path='/' component={Home} />
 						<Route exact path='/Home' component={Home} />
@@ -19,9 +19,9 @@ function App() {
 						<Route exact path='/Contact' component={Contact} />
 						<Route component={Home} />
 					</Switch>
-					<Footer />
 				</div>
 			</Router>
+			<Footer />
 		</div>
 	);
 }

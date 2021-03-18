@@ -93,7 +93,6 @@
 }
 
 .error {
-	/* width: 100px; */
 	background-color: salmon;
 	opacity: 0.6;
 }
@@ -106,6 +105,11 @@
 	.form-container form label input,
 	#subject {
 		width: 100%;
+	}
+
+	.contact-blurb {
+		padding-bottom: 0;
+		margin-bottom: 0;
 	}
 
 	.container-contact {
