@@ -89,7 +89,7 @@ Tags
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0.5em 0;
-	padding: 0;
+	padding: 0 1rem;
 	justify-content: center;
 	list-style: none;
 }
@@ -187,10 +187,6 @@ Description
 	.container-port {
 		width: 100%;
 		padding: 0;
-	}
-
-	.port-items {
-		/* padding: 10rem; */
 	}
 
 	.port-item {
