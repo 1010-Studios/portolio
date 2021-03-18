@@ -29,14 +29,14 @@ const Home = () => {
 					</div>
 					<div className='home-social-links'>
 						<a href='https://github.com/1010-Studios' target='#'>
-							<i className='fab fa-github-square' />
+							<i className='fab fa-github-square footer-link' />
 							<span>Github</span>
 						</a>
 						<a
 							href='https://www.linkedin.com/in/tyler-lowes-10071a190/'
 							target='#'>
 							{' '}
-							<i className='fab fa-linkedin' />
+							<i className='fab fa-linkedin footer-link' />
 							<span>LinkedIn</span>
 						</a>
 					</div>

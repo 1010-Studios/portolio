@@ -130,10 +130,19 @@ Image
 	transform: scale(0);
 	background-color: rgba(50, 50, 50, 0.8);
 	transition: all 300ms ease-in-out;
+	border-radius: 5px;
+}
+
+.port-item-img-overlay i:hover {
+	color: var(--orange);
+}
+.port-item-img-overlay i {
+	padding: 1rem;
 }
 
 .port-item-img:hover {
-	transform: scale(1.1);
+	/* transform: scale(1.1); */
+	transform: scale(0.8);
 }
 
 .port-item-img:hover .port-item-img-overlay {

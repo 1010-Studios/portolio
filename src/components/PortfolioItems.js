@@ -33,19 +33,10 @@ const PortfolioItem = ({
 					<div className='port-item-img'>
 						<div className='port-item-img-overlay'>
 							<a href={url} target='#'>
-								<i
-									className='fas fa-external-link-alt'
-									style={{ padding: '1rem', borderRadius: '15px' }}></i>
+								<i className='fas fa-external-link-alt'></i>
 							</a>
 							<a href={git} target='#'>
-								<i
-									className='fab fa-github-square'
-									style={{
-										padding: '1rem',
-										borderRadius: '15px',
-										color: 'white',
-										fontSize: '1.5rem',
-									}}></i>
+								<i className='fab fa-github-square'></i>
 							</a>
 						</div>
 
