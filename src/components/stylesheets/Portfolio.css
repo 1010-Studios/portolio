@@ -7,15 +7,11 @@
 	color: white;
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
 	text-align: center;
 	align-items: center;
-	/* justify-content: center; */
 	color: white;
-	margin: 1rem 0;
-	padding: 2rem 1rem;
-	/* width: 100%; */
-	/* height: 100%; */
+	margin: 2rem 0;
+	padding: 1rem 0.5rem;
 	overflow: hidden;
 }
 
@@ -23,11 +19,15 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding: 1rem 0;
+	width: 100%;
 }
 
 .port-item {
-	flex-basis: 30%;
-	min-width: 30vw;
+	/* flex-basis: 10%; */
+	max-width: 500px;
+	min-width: 400px;
+	width: 30vw;
 	display: flex;
 	overflow: hidden;
 	flex-direction: column;
@@ -111,11 +111,34 @@ Image
 ****************/
 
 .port-item-img {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	overflow: hidden;
+	height: 300px;
+	transition: all 200ms ease-in-out;
 }
 
-.port-item img {
-	opacity: 0.7;
+.port-item-img a {
+	color: white;
+	text-decoration: none;
+}
+
+.port-item-img-overlay {
+	position: absolute;
+	transform: scale(0);
+	background-color: rgba(50, 50, 50, 0.8);
+	transition: all 300ms ease-in-out;
+}
+
+.port-item-img:hover {
+	transform: scale(1.1);
+}
+
+.port-item-img:hover .port-item-img-overlay {
+	opacity: 1;
+	transform: scale(1.5);
 }
 
 /****************
@@ -160,7 +183,7 @@ Description
 	white-space: pre-wrap;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
 	.container-port {
 		width: 100%;
 		padding: 0;
