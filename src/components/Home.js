@@ -16,7 +16,7 @@ const Home = () => {
 					<p className='tagline'>
 						My name is Ty!
 						<br />
-						<br />I am a web developer living in Calgary, Alberta.
+						<br />I am a developer living in Calgary, Alberta.
 						<br />
 					</p>
 					<div className='btns'>
